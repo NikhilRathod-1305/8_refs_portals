@@ -1,6 +1,7 @@
 export default function ResultsModal({ results , timer}){
 
-    return <dialog>
+    return (
+    <dialog className="result-modal">
         <h2>You {results}</h2>
         <p>Time taken: <strong>{timer} seconds</strong></p>
         <p>You stopped the timer <strong>with X seconds left</strong></p>
@@ -10,4 +11,5 @@ export default function ResultsModal({ results , timer}){
             </button>
         </form>
     </dialog>
+    )
 }
